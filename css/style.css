@@ -1,0 +1,221 @@
+/*
+ * ------------------------------------------------------------------------
+ * CGSTEPS.COM
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2015 CGSTEPS.COM, All Rights Reserved.
+ * Author: CGSTEPS.COM
+ * Websites:  http://www.cgsteps.com
+ * ------------------------------------------------------------------------
+*/
+
+/*--- GENERAL ---*/
+body {	
+    background: #f2f2f2;
+    color: #303030;
+    font-family: 'Dosis';
+    text-align: center;
+}
+.container {
+    margin: 20px auto;    
+}
+.well {        
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;  
+    background-color: #FFF;
+    border: 1px solid #e3e3e3;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.height {
+    min-height:260px;    
+}
+
+/*--- Buttons ---*/
+.btn-primary {
+    background: #4FC1E9;
+    border-color: #4FC1E9;
+}
+.btn-primary:hover {
+    background: #3BAFDA;
+    border-color: #3BAFDA;
+}
+.input-group {
+    margin-bottom: 2px;
+}
+.input-group-addon span{
+    margin-right: 5px;   
+}
+.input-group-addon i{
+    color: #A5A5A5;   
+}
+
+/*--- CHECKBOX ---*/
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;    
+    vertical-align:bottom;
+    background:url(../img/checkbox.png) no-repeat;
+    cursor:pointer;  
+    margin-right:5px; 
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out; 
+}
+input[type="checkbox"]:checked + label span {
+    background:url(../img/checkbox.png) 0 -30px;    
+}
+.checkbox {
+    color:#2E2E2E;
+    margin-top:0px;
+}
+.checkbox label:hover {
+    text-decoration: underline;
+}
+
+/*--- Background buttons ---*/
+.bg {
+    position:absolute;
+    top:6px;
+    left:20px; 
+    z-index:1000;               
+}
+.bg div {    
+    display:block;
+    width:20px;
+    height:20px;
+    vertical-align:top;
+    cursor:pointer;
+    border-radius: 2px;
+    margin:2px;
+}
+.bg div:first-child {
+    background: #f2f2f2;
+}
+.bg div:last-child {
+    background: #303030;
+}
+
+/*--- CONTENT ---*/
+.last-update {
+    position:absolute;
+    top:5px;
+    right:25px; 
+    font-size: 12px;
+    color:#fea43c; 
+    text-align:right; 
+}
+.weather_icon {
+    padding-top:20px;
+}
+.weather_icon i {    
+    text-align:center;
+    font-size:100px;
+    color:#fea43c; 
+    margin: 20px;              
+}
+.weather_icon span {
+    color:#B2B2B2;
+    font-size:18px;
+    font-weight: 400;       
+}
+.temperature_shape {
+    margin-top: 20px;    
+    border-radius: 100%;
+    border: 2px solid #fea43c;
+    padding: 15px 10px 0 12px;
+    width: 180px;
+    height: 180px;
+    display: inline-block;    
+    color: #fea43c;    
+    font-family: 'Dosis';
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
+            box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
+}
+.temperature_shape span { font-size: 30px; font-weight: 200; color:#8D8D8D; }
+.temperature_shape strong { font-size: 26px; display:block; margin-top: -90px; margin-left: 100px;}
+.temperature_shape > div {
+    color:#8D8D8D;
+    display:block;
+    font-size: 16px;
+    padding-top:10px;
+}
+.weather_info {
+    margin-top:40px;      
+}
+.daily_forecast_values,
+.weather_info div {    
+    padding: 5px; 
+    color: #B2B2B2;          
+}
+.weather_info div strong { 
+    display:block;          
+}
+.wind_shape strong,
+.daily_forecast_values strong,
+.weather_info div strong { 
+    color: #555;      
+}
+.wind_shape {
+    color: #8D8D8D;    
+}
+.wind-sq {    
+    margin-top:-160px;
+    width:100%;
+    display:block;
+    margin-bottom:30px;         
+}
+.wind-sq span:first-child,
+.wind-sq span:last-child {    
+    font-size: 16px;
+    text-align:center;
+    display:block;     
+}
+.wind-val {    
+    color: #fea43c;
+    font-size: 50px;
+    text-align:center;
+}
+.forecast {
+    margin-top: -15px;
+    color: #8CC152; 
+    font-size: 12px;    
+}
+.daily_forecast_temp {
+    display: inline-block;    
+    color: #8CC152;    
+    font-family: 'Dosis';
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+}
+.daily_forecast_temp span { font-size: 30px; font-weight: 200; color:#8D8D8D; }
+.daily_forecast_temp strong { font-size: 20px; position:absolute; margin-top: 15px;}
+.weather_icon_forecast {
+    text-align:center;
+    font-size:60px;
+    color:#A0D468;
+    vertical-align:top;
+    display: inline-block;
+    margin-left:20px;
+    margin-top:5px;    
+}
+
+/*--- CHART ---*/
+#chartdiv {
+	width	: 100%;
+	height	: 350px;
+    margin:  0 auto;        
+}
+#preloader {
+    display: inline-block;
+}

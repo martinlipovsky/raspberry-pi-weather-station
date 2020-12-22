@@ -8,7 +8,6 @@ What you need:
   * 433MHz superheterodyne receiver
   * Source codes  
 
-Final result and comments on web site: http://www.cgsteps.com/weather/
   
 ##Setup
   * use setup.sql file to create tables
